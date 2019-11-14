@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="coupon-template:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/coupon_template_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="coupon-template/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="coupon-template" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:2.1.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.6.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,28 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: coupon-gateway
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/
+#路由
+zuul:
+  prefix: /imooc
+  routes:
+    #优惠券模版微服务路由配置定义
+    template:
+      path: /coupon-template/**
+      serviceId: eureka-client-coupon-template
+      strip-prefix: false
+
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000
+#网关
+ribbon:
+  ConnectTimeout: 1500
+  ReadTimeout: 15000
